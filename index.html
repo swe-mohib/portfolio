@@ -1,355 +1,326 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mohd Mohibuddin — Full-stack developer building thoughtful, scalable web applications."
+    />
+    <title>Mohd Mohibuddin — Full-stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Mohib home"
+        >mohib<span>.</span></a
+      >
+      <nav aria-label="Primary navigation">
+        <a href="#work">Work</a><a href="#about">About</a
+        ><a href="#skills">Skills</a>
+      </nav>
+      <a
+        class="header-link"
+        href="./assets/Mohd_Mohibuddin_Resume.pdf"
+        target="_blank"
+        rel="noopener"
+        >Resume <span>↗</span></a
+      >
+    </header>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MOHD MOHIBUDDIN | PORTFOLIO | Full Stack Developer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
-</head>
-
-<body>
-  <nav id="desktop-nav">
-    <div class="logo">mohib.</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">mohib.</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
-  <section id="profile">
-    <div class="section__pic-container">
-      <img class="profile-pic" src="./assets/profile-pic.png" alt="John Doe profile picture" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">MOHD MOHIBUDDIN</h1>
-      <p class="section__text__p2">Full Stack Developer</p>
-      <p class="section__text__p2_sub">(React | Next.js | Node.js)</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="location.href='./#projects'">
-          View projects
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-      </div>
-      <div id="socials-container">
-        <a href="mailto:swe.mohib@gmail.com">
-          <img src="./assets/email.png" alt="Email Me" class="icon" />
-        </a>
-        <a href="https://www.linkedin.com/in/swe-mohib/" target="_blank" rel="noopener noreferrer">
-          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
-        </a>
-        <a href="https://github.com/swe-mohib/" target="_blank" rel="noopener noreferrer">
-          <img src="./assets/github.png" alt="My GitHub profile" class="icon" />
-        </a>
-
-      </div>
-    </div>
-  </section>
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="skills-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-1.png" alt="Mohibs Store" class="project-img" />
-          </div>
-          <h2 class="skills-sub-title project-title">Mohibs Store</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/swe-mohib/mohibs-store'">
-              Github
-            </button>
-            <div class="dropdown">
-              <button class="btn btn-color-2 project-btn">
-                Live Demo
-              </button>
-              <div class="dropdown-content">
-                <a href="https://store.mohibs.in/">Frontend</a>
-                <a href="https://cms.store.mohibs.in/">Backend + Admin</a>
-              </div>
-            </div>
-          </div>
-          <h3 class="tech-stack">Tech Stack</h3>
-          <div class="keywords-container">
-            <div class="keyword">
-              Next.js 15
-            </div>
-            <div class="keyword">
-              React 19
-            </div>
-            <div class="keyword">
-              TypeScript
-            </div>
-            <div class="keyword">
-              Tailwind CSS 4
-            </div>
-            <div class="keyword">
-              Razorpay
-            </div>
-            <div class="keyword">
-              MySQL
-            </div>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-2.png" alt="Mohibs School" class="project-img" />
-          </div>
-          <h2 class="skills-sub-title project-title">Mohibs School</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/swe-mohib/mohibs-school'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://school.mohibs.in/'">
-              Live Demo
-            </button>
-          </div>
-          <h3 class="tech-stack">Tech Stack</h3>
-          <div class="keywords-container">
-            <div class="keyword">
-              React 18
-            </div>
-            <div class="keyword">
-              Redux
-            </div>
-            <div class="keyword">
-              Node.js
-            </div>
-            <div class="keyword">
-              Razorpay
-            </div>
-            <div class="keyword">
-              Tailwind CSS 4
-            </div>
-            <div class="keyword">
-              MongoDB
-            </div>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-3.png" alt="True-Feedback" class="project-img" />
-          </div>
-          <h2 class="skills-sub-title project-title">True-Feedback</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/swe-mohib/true-feedback'">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://true-feedback.mohibs.in/a/qW6*eZ1@'">
-              Live Demo
-            </button>
-          </div>
-          <h3 class="tech-stack">Tech Stack</h3>
-          <div class="keywords-container">
-            <div class="keyword">
-              Next.js 15
-            </div>
-            <div class="keyword">
-              React 19
-            </div>
-            <div class="keyword">
-              TypeScript
-            </div>
-            <div class="keyword">
-              Tailwind CSS 4
-            </div>
-            <div class="keyword">
-              MongoDB
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
-  </section>
-  <section id="skills">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Skills</h1>
-    <div class="skills-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="skills-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
-              <div>
-                <h3>JavaScript</h3>
-                <p>Mastery</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
-              <div>
-                <h3>TypeScript</h3>
-                <p>Proficient</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
-              <div>
-                <h3>React</h3>
-                <p>Proficient</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
-              <div>
-                <h3>Next.js</h3>
-                <p>Proficient</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
-              <div>
-                <h3>CSS</h3>
-                <p>Mastery</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
-              <div>
-                <h3>HTML</h3>
-                <p>Mastery</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="skills-sub-title">Backend Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
-              <div>
-                <h3>Node.js</h3>
-                <p>Mastery</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
-              <div>
-                <h3>Express.js</h3>
-                <p>Mastery</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
-              <div>
-                <h3>MongoDB</h3>
-                <p>Mastery</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
-              <div>
-                <h3>PostgreSQL</h3>
-                <p>Proficient</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
-              <div>
-                <h3>Git</h3>
-                <p>Proficient</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
-              <div>
-                <h3>Web Socket</h3>
-                <p>Proficient</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'" />
-  </section>
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section_about__pic-container">
-        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/experience.png" alt="Skills icon" class="icon" />
-            <h3>Portfolio Highlights</h3>
-            <p>Completed 3+<br />Full Stack Projects</p>
-          </div>
-          <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon" />
-            <h3>Academic Background</h3>
-            <p>B.Tech in Computer Science Engineering<br />Diploma in Information Technology</p>
-          </div>
-        </div>
-        <div id="text-container">
-          <p>Full-Stack Developer with hands-on experience in building scalable web applications using React, Next.js,
-            Node.js and MongoDB. </p>
-          <p>Skilled in developing responsive UIs, RESTful APIs, admin dashboards, and payment-integrated platforms.</p>
-          <p>Strong understanding of software architecture, component-based design, and performance optimization across
-            the full development lifecycle.</p>
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Available for opportunities</p>
+          <h1>Building digital products that <em>work beautifully.</em></h1>
+          <p class="intro">
+            I’m Mohd Mohibuddin, a full-stack developer who ships reliable web
+            products—from polished interfaces to cloud-deployed infrastructure.
           </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work"
+              >See selected work <span>↓</span></a
+            >
+            <a class="text-link" href="mailto:swe.mohib@gmail.com"
+              >Let’s talk <span>↗</span></a
+            >
+          </div>
+        </div>
+        <div class="hero-portrait">
+          <div class="portrait-note">FULL-STACK<br />DEVELOPER</div>
+          <img src="./assets/profile-pic.png" alt="Mohd Mohibuddin" />
+          <p>Based in India<br /><span>01 — 2026</span></p>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="Core technologies">
+        <div class="marquee-track">
+          <span class="marquee-group">REACT <i>✦</i> NEXT.JS <i>✦</i> TYPESCRIPT <i>✦</i> NODE.JS <i>✦</i> MONGODB <i>✦</i> POSTGRESQL <i>✦</i> DOCKER <i>✦</i> CI/CD <i>✦</i> AWS EC2 <i>✦</i> AWS ASG <i>✦</i> TAILWIND CSS <i>✦</i> PRISMA <i>✦</i> WEBSOCKETS <i>✦</i> RAZORPAY <i>✦</i></span>
+          <span class="marquee-group" aria-hidden="true">REACT <i>✦</i> NEXT.JS <i>✦</i> TYPESCRIPT <i>✦</i> NODE.JS <i>✦</i> MONGODB <i>✦</i> POSTGRESQL <i>✦</i> DOCKER <i>✦</i> CI/CD <i>✦</i> AWS EC2 <i>✦</i> AWS ASG <i>✦</i> TAILWIND CSS <i>✦</i> PRISMA <i>✦</i> WEBSOCKETS <i>✦</i> RAZORPAY <i>✦</i></span>
+        </div>
+      </section>
+
+      <section id="work" class="section work-section">
+        <div class="section-heading">
+          <p class="eyebrow">01 / Selected work</p>
+          <h2>Built to solve real problems.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project featured">
+            <a
+              class="project-image carousel"
+              href="https://school.mohibs.in/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open Mohibs School live site"
+              ><img
+                src="./assets/project-1a.png"
+                alt="Mohibs School learning platform"
+              /><img
+                src="./assets/project-1b.png"
+                alt="Mohibs School dashboard"
+              /><img
+                src="./assets/project-1c.png"
+                alt="Mohibs School course interface"
+              /><span>Hover to preview ↗</span></a
+            >
+            <div class="project-meta">
+              <div>
+                <p>01</p>
+                <h3>Mohibs School</h3>
+                <p class="project-description">
+                  A learning platform with role-based access, secure payment
+                  flows, and live analytics for students and administrators.
+                </p>
+              </div>
+              <div class="tech-stack">
+                <p>Built with</p>
+                <ul>
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>MongoDB</li>
+                  <li>JWT</li>
+                  <li>Docker</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/swe-mohib/mohibs-school"
+                target="_blank"
+                rel="noopener"
+                >View source on GitHub ↗</a
+              ><a
+                href="https://school.mohibs.in/"
+                target="_blank"
+                rel="noopener"
+                class="visit-link">Visit live site ↗</a
+              >
+            </div>
+          </article>
+          <article class="project">
+            <a
+              class="project-image carousel"
+              href="https://store.mohibs.in/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open Mohibs Store live site"
+              ><img
+                src="./assets/project-2a.png"
+                alt="Mohibs Store storefront"
+              /><img
+                src="./assets/project-2b.png"
+                alt="Mohibs Store product view"
+              /><img
+                src="./assets/project-2c.png"
+                alt="Mohibs Store admin dashboard"
+              /><span>Hover to preview ↗</span></a
+            >
+            <div class="project-meta">
+              <div>
+                <p>02</p>
+                <h3>Mohibs Store</h3>
+                <p class="project-description">
+                  A multi-tenant e-commerce storefront and CMS, with
+                  store-scoped access, secure payments, and infrastructure built
+                  to scale.
+                </p>
+              </div>
+              <div class="tech-stack">
+                <p>Built with</p>
+                <ul>
+                  <li>Next.js 15</li>
+                  <li>TypeScript</li>
+                  <li>PostgreSQL</li>
+                  <li>Clerk</li>
+                  <li>Razorpay</li>
+                  <li>AWS</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/swe-mohib/mohibs-store"
+                target="_blank"
+                rel="noopener"
+                >View source on GitHub ↗</a
+              ><a class="visit-link" href="https://store.mohibs.in/" target="_blank" rel="noopener"
+                >Visit storefront ↗</a
+              ><a
+                href="https://cms.store.mohibs.in/"
+                target="_blank"
+                rel="noopener"
+                >Visit admin CMS ↗</a
+              >
+            </div>
+          </article>
+          <article class="project">
+            <a
+              class="project-image carousel"
+              href="https://true-feedback.mohibs.in/a/qW6*eZ1@"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open True Feedback live site"
+              ><img
+                src="./assets/project-3a.png"
+                alt="True Feedback landing page"
+              /><img
+                src="./assets/project-3b.png"
+                alt="True Feedback question flow"
+              /><img
+                src="./assets/project-3c.png"
+                alt="True Feedback interface"
+              /><span>Hover to preview ↗</span></a
+            >
+            <div class="project-meta">
+              <div>
+                <p>03</p>
+                <h3>True Feedback</h3>
+                <p class="project-description">
+                  An anonymous feedback product built around a clean question
+                  flow and fast, responsive interactions.
+                </p>
+              </div>
+              <div class="tech-stack">
+                <p>Built with</p>
+                <ul>
+                  <li>Next.js</li>
+                  <li>TypeScript</li>
+                  <li>MongoDB</li>
+                </ul>
+              </div>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/swe-mohib/true-feedback"
+                target="_blank"
+                rel="noopener"
+                >View source on GitHub ↗</a
+              ><a
+                href="https://true-feedback.mohibs.in/a/qW6*eZ1@"
+                target="_blank"
+                rel="noopener"
+                class="visit-link">Visit live site ↗</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="about-image">
+          <img src="./assets/about-pic.png" alt="Mohd working at a desk" />
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow">02 / About me</p>
+          <h2>A practical builder with an eye for the details.</h2>
+          <p>
+            I build end-to-end web applications with the MERN stack and Next.js,
+            choosing SQL or NoSQL to fit the problem. From secure APIs and
+            payment flows to Docker, AWS EC2, and CI/CD, I make products ready
+            to run in the real world.
+          </p>
+          <div class="stats">
+            <div>
+              <strong>10<span>+</span></strong
+              ><small>Projects<br />shipped & deployed</small>
+            </div>
+            <div>
+              <strong>&lt;5</strong
+              ><small>Minutes to deploy<br />with CI/CD</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills-section">
+        <div class="section-heading">
+          <p class="eyebrow">03 / Toolkit</p>
+          <h2>The tools behind the work.</h2>
+        </div>
+        <div class="skill-columns">
+          <div>
+            <p>Frontend</p>
+            <ul>
+              <li>JavaScript & TypeScript</li>
+              <li>React & Next.js</li>
+              <li>Redux Toolkit</li>
+              <li>Tailwind & shadcn/ui</li>
+              <li>HTML & CSS</li>
+            </ul>
+          </div>
+          <div>
+            <p>Backend</p>
+            <ul>
+              <li>Node.js & Express</li>
+              <li>REST APIs & WebSockets</li>
+              <li>JWT Authentication</li>
+              <li>MongoDB & PostgreSQL</li>
+              <li>Prisma & Clerk</li>
+              <li>Razorpay & Cloudinary</li>
+            </ul>
+          </div>
+          <div>
+            <p>Infrastructure</p>
+            <ul>
+              <li>Docker</li>
+              <li>CI/CD with GitHub Actions</li>
+              <li>AWS EC2 & AWS ASG</li>
+              <li>Nginx</li>
+              <li>PM2 & Git</li>
+              <li>System Design</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <p class="eyebrow">04 / Get in touch</p>
+      <h2>
+        Have a project in mind?<br /><a href="mailto:swe.mohib@gmail.com"
+          >Let’s make it happen. <span>↗</span></a
+        >
+      </h2>
+      <div class="footer-bottom">
+        <p>© 2026 Mohd Mohibuddin</p>
+        <div>
+          <a href="https://github.com/swe-mohib/" target="_blank" rel="noopener"
+            >GitHub</a
+          ><a
+            href="https://www.linkedin.com/in/swe-mohib/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          ><a href="mailto:swe.mohib@gmail.com">Email</a>
         </div>
       </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-  </section>
-  <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon" />
-        <p><a href="mailto:swe.mohib@gmail.com">swe.mohib@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a href="https://www.linkedin.com/in/swe-mohib/">LinkedIn</a></p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <p>Copyright &#169; 2025 Mohd Mohibuddin. All Rights Reserved.</p>
-  </footer>
-  <script src="script.js"></script>
-</body>
-
+    </footer>
+  </body>
 </html>
