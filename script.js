@@ -1,36 +1,21 @@
-function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
-}
+const root = document.documentElement;
+const savedTheme = localStorage.getItem("theme");
 
-const dropdowns = document.querySelectorAll(".dropdown");
+if (savedTheme) root.dataset.theme = savedTheme;
 
-dropdowns.forEach((dropdown) => {
-  const btn = dropdown.querySelector(".project-btn");
+document.querySelectorAll("[data-theme]").forEach((button) => {
+  button.addEventListener("click", () => {
+    const { theme } = button.dataset;
+    const menu = button.closest("details");
 
-  btn.addEventListener("click", () => {
-    // Close all dropdowns first
-    dropdowns.forEach((d) => {
-      if (d !== dropdown) {
-        d.classList.remove("show");
-        d.querySelector(".project-btn").classList.remove("active");
-      }
-    });
+    if (theme === "system") {
+      root.removeAttribute("data-theme");
+      localStorage.removeItem("theme");
+    } else {
+      root.dataset.theme = theme;
+      localStorage.setItem("theme", theme);
+    }
 
-    // Toggle current one
-    dropdown.classList.toggle("show");
-    btn.classList.toggle("active");
+    menu.open = false;
   });
-});
-
-// Optional: Close when clicking outside
-document.addEventListener("click", (e) => {
-  if (!e.target.closest(".dropdown")) {
-    dropdowns.forEach((d) => {
-      d.classList.remove("show");
-      d.querySelector(".project-btn").classList.remove("active");
-    });
-  }
 });
